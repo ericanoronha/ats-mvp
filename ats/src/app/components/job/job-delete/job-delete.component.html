@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-title>Excluir vaga</mat-card-title>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <label for="title">Título da vaga:</label>
+        <input matInput placeholder="Título da vaga" type="text" name="title" [value]="job.title" disabled/>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="skills">Skills:</label>
+        <input matInput placeholder="Skills" name="skills" type="text" [value]="job.skills"/>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="experience">Experiência necessária:</label>
+        <input matInput placeholder="Experiência necessária" name="experience" type="text" [value]="job.experience"/>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="date">Data de publicação:</label>
+        <input matInput placeholder="Data de publicação (dd/mm/aaaa)" name="date" type="text" [value]="job.date"/>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="status">Status da vaga:</label>
+        <input matInput placeholder="Status da vaga" name="date" type="text" [value]="job.status"/>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions align="start" class="footer">
+    <button mat-raised-button (click)="deleteJob()" color="warn">
+      Excluir
+    </button>
+    <button mat-raised-button (click)="cancel()" color="secondary">
+      Cancelar
+    </button>
+  </mat-card-actions>
+</mat-card>
