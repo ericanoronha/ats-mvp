@@ -33,7 +33,7 @@ export class JobReadComponent implements OnInit {
     }
     this.jobService.updateStatus(jobStatus).subscribe(() => {
       this.getJobs();
-      this.jobService.showMessage("Status da vaga atualizada com sucesso");
+      this.jobService.showMessage("Status da vaga atualizado com sucesso");
     });
   }
 

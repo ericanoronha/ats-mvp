@@ -8,7 +8,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./views/home/home.component";
 import { JobCrudComponent } from "./views/job-crud/job-crud.component";
-import { JobCreateComponent, JobDeleteComponent, JobReadComponent, JobUpdateComponent, HeaderComponent, FooterComponent, NavComponent } from './components';
+import { JobCreateComponent, JobDeleteComponent, JobReadComponent, JobUpdateComponent, HeaderComponent, NavComponent } from './components';
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
@@ -27,7 +27,6 @@ import { MatTooltip, MatTooltipModule, TooltipPosition } from '@angular/material
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     NavComponent,
     HomeComponent,
     JobCrudComponent,

@@ -18,6 +18,10 @@ Testados os métodos GET e PUT no Postman, segui com o desenvolvimento.
 
 ## Front-end com Angular 12
 
+Versão do Angular CLI utilizada no projeto: 12.2.10.
+
+Versão NPM utilizada no projeto: 6.14.9.
+
 Criação do projeto: `ng new ats --skip-install`.
 
 Ajustes no `package.json` conforme documentação do **PO UI**.
@@ -30,6 +34,8 @@ Execução da aplicação em servidor local: `ng serve`
 
 Desabilitei o modo estrito em `tsconfig.json` pois isso me gerou alguns erros de compilação em outros projetos anteriores.
 
+Criei um arquivo `index.ts` em cada diretório usando a ideia do método Barrel, para otimizar as exportações dos componentes.
+
 ### Árvore de Componentes
 
 ![Árvore de componentes](arvore-componentes.png)
@@ -40,56 +46,24 @@ Minha ideia era utilizar o PO UI neste projeto para começar a me familiarizar, 
 
 Executei o comando `ng add @angular/material` no terminal para efetuar a instalação do Material. Tomei a liberdade de escolher o tema Indigo/Pink e também optei pela tipografia global e pela configuração de animações do Material.
 
-### Componente header
-
-`ng g c components/template/header`
-
-Criei um arquivo `index.ts` em cada diretório usando a ideia do método Barrel, para otimizar as exportações dos componentes.
-
-Em seguida, importei o módulo MatToolbarModule no módulo principal da aplicação.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ------
 
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+## Execução da aplicação
 
-## Development server
+Para rodar o JSON serve localmente, execute o seguinte comando no terminal: `npm start`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Acesse `http://localhost:3001/` no navegador. 
 
-## Code scaffolding
+Para executar a aplicação localmente, execute o seguinte comando no terminal: `ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Acesse `http://localhost:4200/` no navegador. 
 
-## Build
+Para executar testes unitários da aplicação via [Karma](https://karma-runner.github.io), execute o seguinte comando no terminal: `ng test`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Uma página se abrirá automaticamente (Google Chrome) indicando o resultado dos testes.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para gerar versão de produção da aplicação, execute o seguinte comando no terminal: `ng build`.  Com isso a versão estará disponível na pasta `dist/`.
