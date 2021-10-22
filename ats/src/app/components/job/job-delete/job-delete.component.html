@@ -8,19 +8,15 @@
       </mat-form-field>
       <mat-form-field>
         <label for="skills">Skills:</label>
-        <input matInput placeholder="Skills" name="skills" type="text" [value]="job.skills"/>
+        <input matInput placeholder="Skills" name="skills" type="text" [value]="job.skills" disabled/>
       </mat-form-field>
       <mat-form-field>
         <label for="experience">Experiência necessária:</label>
-        <input matInput placeholder="Experiência necessária" name="experience" type="text" [value]="job.experience"/>
+        <input matInput placeholder="Experiência necessária" name="experience" type="text" [value]="job.experience" disabled/>
       </mat-form-field>
       <mat-form-field>
         <label for="date">Data de publicação:</label>
-        <input matInput placeholder="Data de publicação (dd/mm/aaaa)" name="date" type="text" [value]="job.date"/>
-      </mat-form-field>
-      <mat-form-field>
-        <label for="status">Status da vaga:</label>
-        <input matInput placeholder="Status da vaga" name="date" type="text" [value]="job.status"/>
+        <input matInput placeholder="Data de publicação (dd/mm/aaaa)" name="date" type="text" [value]="job.date" disabled/>
       </mat-form-field>
     </form>
   </mat-card-content>

@@ -1,8 +1,8 @@
 export interface Job {
-  id?: number //atributo opcional
+  id?: number
   title?: string
   skills?: string
   experience?: string
   date?: string
-  status?: string
+  status?: boolean
 }

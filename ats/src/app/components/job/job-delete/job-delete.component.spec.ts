@@ -13,13 +13,4 @@ describe('JobDeleteComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(JobDeleteComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('deve criar o componente de exclusão de vaga', () => {
-    expect(component).toBeTruthy();
-  });
 });

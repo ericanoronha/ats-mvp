@@ -13,13 +13,4 @@ describe('JobCreateComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(JobCreateComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('deve criar o componente de criação de vaga', () => {
-    expect(component).toBeTruthy();
-  });
 });

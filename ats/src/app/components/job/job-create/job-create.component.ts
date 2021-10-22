@@ -14,7 +14,7 @@ export class JobCreateComponent implements OnInit {
     skills: "",
     experience: "",
     date: "",
-    status: ""
+    status: false
   };
 
   constructor(private jobService: JobService, private router: Router) {}

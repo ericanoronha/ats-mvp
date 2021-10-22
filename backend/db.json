@@ -2,10 +2,10 @@
   "jobs": [
     {
       "id": 1,
-      "title": "Team lead",
-      "skills": "Java",
+      "title": "Tech lead",
+      "skills": "Java, Spring MVC, Metodologias ágeis, Inglês avançado",
       "experience": "10 anos",
-      "date": "Outubro",
+      "date": "20/10/2021",
       "status": true
     },
     {
@@ -13,24 +13,72 @@
       "title": "Software engineer",
       "skills": "PHP, CSS",
       "experience": "2 anos",
-      "date": "Outubro",
-      "status": false
+      "date": "20/10/2021",
+      "status": true
     },
     {
       "id": 3,
       "title": "UX designer",
       "skills": "Figma",
       "experience": "5 anos",
-      "date": "Outubro",
+      "date": "20/10/2021",
       "status": true
     },
     {
-      "id": "5",
-      "title": "teste",
-      "skills": "teste skill",
+      "title": "Agile Master",
+      "skills": "Kanban, JIRA, Metodologias ágeis, Excel",
+      "experience": "3 anos",
+      "date": "02/06/2021",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "Analista de Qualidade de Software Pleno",
+      "skills": "Automação de testes, BDD, Certificação CTFL, Gherkin",
       "experience": "2 anos",
-      "date": "data",
-      "status": "true"
+      "date": "05/08/2021",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "Analista de Dados e DevOps",
+      "skills": "Arquitetura de Software, DevOps, .Net, .Net Core MVC",
+      "experience": "1 ano",
+      "date": "15/08/2021",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "Analista de Desenvolvimento de Software - Junior",
+      "skills": "ADVLP, C#, Progress, 4GL, Java, Banco de Dados, Metodologias ágeis",
+      "experience": "6 meses",
+      "date": "22/08/2021",
+      "status": false,
+      "id": 7
+    },
+    {
+      "title": "Analista de Desenvolvimento de Software Sênior (Python)",
+      "skills": "Python, DevOps, deploys automatizados (CI/CD), AWS",
+      "experience": "10 anos",
+      "date": "25/08/2021",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "Analista de Infraestrutura Pleno",
+      "skills": "Python, Bash, Power Shell, Openstack, Kubernetes",
+      "experience": "5 anos",
+      "date": "04/09/2021",
+      "status": false,
+      "id": 9
+    },
+    {
+      "title": "Analista Front-End Sênior",
+      "skills": "HTML, Javascript, C#, Java, Arquitetura web, Design patterns",
+      "experience": "8 anos",
+      "date": "19/09/2021",
+      "status": false,
+      "id": 10
     }
   ]
 }

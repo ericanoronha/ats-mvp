@@ -36,7 +36,7 @@ export class JobService {
     );
   }
 
-  readById(id: number): Observable<Job[]> {
+  readById(id: number): Observable<Job> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.get<Job[]>(url).pipe(
       map((obj) => obj),
@@ -47,6 +47,14 @@ export class JobService {
   update(job: Job): Observable<Job> {
     const url = `${this.baseUrl}/${job.id}`;
     return this.http.put<Job>(url, job).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+  updateStatus(job: Job): Observable<Job> {
+    const url = `${this.baseUrl}/${job.id}`;
+    return this.http.patch<Job>(url, job).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );

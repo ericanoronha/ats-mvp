@@ -16,7 +16,7 @@ export class JobCrudComponent implements OnInit {
       routeUrl: ''
     }
     headerService.headerData = {
-      title: 'ATS MVP',
+      title: 'Vagas',
       icon: 'assignment_turned_in',
       routeUrl: '/jobs'
     }

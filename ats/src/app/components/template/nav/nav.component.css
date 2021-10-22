@@ -1,17 +1,28 @@
-.sidenav {
-  background-color: #643cb4;
-  width: 200px;
-}
-
-.sidenav a {
-  color: white;
-}
-
 .sidenav i {
   margin-right: 10px;
+}
+
+.container {
+  position: absolute;
+  top: 65px;
+  min-height: 100vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
 }
 
 .content {
   padding: 16px;
   background-color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .container {
+    background-color: white;
+    position: relative;
+    margin-top: -64px;
+    height: auto;
+    min-height: 100vh;
+  }
 }

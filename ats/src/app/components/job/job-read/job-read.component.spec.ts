@@ -13,13 +13,4 @@ describe('JobReadComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(JobReadComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('deve criar o componente de leitura de vaga', () => {
-    expect(component).toBeTruthy();
-  });
 });
